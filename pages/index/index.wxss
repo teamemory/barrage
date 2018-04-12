@@ -1,0 +1,87 @@
+/**index.wxss**/
+
+.button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.aon {
+  position: absolute;
+  white-space: nowrap; /* 防止向下换行*/
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+  left: 100%;
+}
+
+.doommview {
+  z-index: 3;
+  height: 50%;
+  width: 100%;
+  position: absolute;
+}
+
+@keyframes first {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: -100%;
+  }
+}
+
+.swich_tab {
+  position: fixed;
+  right: 0;
+  bottom: 200rpx;
+  z-index: 3;
+}
+
+.input_zj {
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border: 1px solid #ddd;
+}
+
+.list_content {
+  display: inline-flex;
+  align-items: center;
+  font-size: 30rpx;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 40rpx;
+  padding: 6rpx 20rpx;
+  color: #fff;
+  position: absolute;
+  white-space: nowrap; /* 防止向下换行*/
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+  left: 100%;
+}
+
+.icon {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+/*首个弹幕  */
+.first_danmu{
+  display: inline-flex;
+  align-items: center;
+  font-size: 28rpx;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 40rpx;
+  padding: 6rpx 30rpx;
+  color: #fff;
+  position: absolute;
+  white-space: nowrap; /* 防止向下换行*/
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+  left: 100%;
+}

@@ -1,0 +1,14 @@
+<view class="doommview" wx:if="{{dm_list.length==0?'false':'true'}}">
+  <block wx:for="{{dm_list}}" wx:key="id">
+    <view class='list_content' style="animation: first {{item.time}}s linear {{item.step}}s infinite;top:{{item.top}}%;color:{{item.color}};">
+      <image src='{{item.img}}' class='icon'></image>
+      <text>{{item.text}}</text>
+    </view>
+  </block>
+  <!--首个弹幕  -->
+  <view class='first_danmu' style='animation: first 4s linear forwards;top:30%;color:#fff;' wx:if="{{show_first}}">
+    共有{{danmu_num}}条弹幕来袭
+  </view>
+</view>
+<input bindtap='setDanmu' class='input_zj' bindconfirm="set_danmu"></input>
+<switch bindchange="switch1Change" class='swich_tab' />
